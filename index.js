@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
 
 app.use(express.json());
 // Available Routes
-app.use("/api/auth", require("./router/auth"));
+app.use("/", require("./router/auth"));
 
 app.get("/", (req, res) => {
     res.send("All set")
