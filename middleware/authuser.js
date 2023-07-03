@@ -1,6 +1,5 @@
 var jwt = require('jsonwebtoken');
 const JWT_SECRET = process.env.JWT_SECRET;
-
 const fetchuser = (req, res, next) => {
     const token = req.header('auth-token');
     if (!token) {
@@ -15,4 +14,4 @@ const fetchuser = (req, res, next) => {
     }
 }
 
-module.exports = fetchuser;
+module.exports = fetchuser
